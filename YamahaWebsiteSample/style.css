@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+
+	line-height: 1;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+	
+}
+body{
+    background-color: #016ff9;
+    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+	
+}
+.bgtop{
+	height: 110px;
+	width: 100%;
+	background-color: #0000ab;
+	border: none;
+}
+.nav{
+	height: 100px;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid;
+	position: absolute;
+	border: none;
+}
+.nav img{
+	width:150px;
+	margin: 20px;
+}
+
+.nav-item-feature{
+    font-family:Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 20px;
+	color: #016ff9;
+	font-weight: 400;
+	text-decoration: none;
+	margin: 0 0.75em ;
+	text-transform: uppercase;
+    display: inline-block;
+	transition: all 80ms ease-in;
+
+}
+.nav-item-feature:hover{
+	transform: skew(-10deg);
+	background-color: #0000ab;
+	color: white;
+	padding: 40px 14px;
+	font-style:normal;
+}
+.book{
+	transform: skew(-10deg);
+	background-color: #0000ab;
+	display: flex;
+	padding:20px;
+	width: 150px;
+	height: 100px;
+	align-items: center;
+	
+}
+.nav-item-book{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	text-decoration: none;
+
+}
+
+.bike-comparison{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;	
+}
+
+.bike-panel{
+    background-color: white;
+    border-radius: 10px;
+	transition: scale 500ms;
+	scale: 0.75;
+	
+}
+.bike-panel:hover{
+	scale: 0.9;
+
+}
+.bike-img{
+	scale: 0.65;
+	border: 1px solid #888;
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom:none;
+	transition: all 300ms;
+
+}
+.bike-img:hover{
+	scale: 0.7;
+}
+.bike-header{
+	color: #888;
+	font-weight: 700;
+	font-size: 32px;
+	letter-spacing: 1px;
+}
+.bike-features{
+	margin: 30px 0 15px 0;
+	color: #016ff9;
+	
+}
+.bike-features-items{
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 12px;
+	line-height: 10px;
+	padding: 15px 0;
+	border-top: 1px solid #e1f1fe;
+}
+.bike-pricing{
+	color: #016ff9;
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+}
+.bike-site{
+	border: 1px solid #9dd1ff;
+	border-radius: 10px;
+	color: #348efe;
+	display: inline-block;
+	padding: 15px 35px;
+	margin: 10px 0 25px 0;
+	text-decoration: none;
+	font-size: 20px;
+	transition: background-color 200ms, color 500ms;
+
+}
+.bike-site:hover {
+	background-color: #016ff9;
+	color: white;
+}
