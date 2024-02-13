@@ -8,77 +8,73 @@
 </head>
 <body>
     <div class="calculator" id="main">
-        <div class="toggle">
-            <input type="checkbox" id="darkmode-toggle"/>
-            <label for="darkmode-toggle">
-        </div>
         <div class="container">
             <input type="text" name="display" id="display" class="screen" >
             <section class="cal-btn-section">
                 <div class="cal-btn-row">
-                    <button class="calc-btn" value="AC" onclick="display.value=''">
+                    <button class="calc-btn" value="AC" onclick="clearDisplay()">
                         AC
                     </button>
-                    <button class="calc-btn" value="DE" onclick="display.value=display.value.toString().slice(0,-1) ">
+                    <button class="calc-btn" value="DE" onclick="deleteChar()">
                         DE
                     </button>
-                    <button class="calc-btn " value="." onclick="display.value += '.'">
+                    <button class="calc-btn " value="." onclick="appendToDisplay('.')">
                         .
                     </button>
-                    <button class="calc-btn" value="/" onclick="display.value+= '/'">
+                    <button class="calc-btn" value="/" onclick="appendToDisplay('/')">
                         &divide;
                     </button>
                 </div>
                 <div class="cal-btn-row">
-                    <button class="calc-btn"  value="3" onclick="display.value+='7' ">
+                    <button class="calc-btn"  value="3" onclick="appendToDisplay('7')">
                         7
                     </button>
-                    <button class="calc-btn"  value="3" onclick="display.value+='8' ">
+                    <button class="calc-btn"  value="3" onclick="appendToDisplay('8')">
                         8
                     </button>
-                    <button class="calc-btn"  value="3" onclick="display.value+='9' ">
+                    <button class="calc-btn"  value="3" onclick="appendToDisplay('9')">
                         9
                     </button>
-                    <button class="calc-btn" value="*" onclick="display.value += '*'">
+                    <button class="calc-btn" value="*" onclick="appendToDisplay('*')">
                         &times;
                     </button>
                 </div>
                 <div class="cal-btn-row">
-                    <button class="calc-btn"  value="3" onclick="display.value+='4' ">
+                    <button class="calc-btn"  value="3" onclick="appendToDisplay('4')">
                         4
                     </button>
-                    <button class="calc-btn"  value="3" onclick="display.value+='5' ">
+                    <button class="calc-btn"  value="3" onclick="appendToDisplay('5')">
                         5
                     </button>
-                    <button class="calc-btn"  value="3" onclick="display.value+='6' ">
+                    <button class="calc-btn"  value="3" onclick="appendToDisplay('6')">
                         6
                     </button>
-                    <button class="calc-btn" value="-" onclick="display.value += '-'">
+                    <button class="calc-btn" value="-" onclick="appendToDisplay('-')">
                         &minus;
                     </button>
                 </div>
                 <div class="cal-btn-row">
-                    <button class="calc-btn"  value="3" onclick="display.value+='1' ">
+                    <button class="calc-btn"  value="3" onclick="appendToDisplay('1')">
                         1
                     </button>
-                    <button class="calc-btn"  value="3" onclick="display.value+='2' ">
+                    <button class="calc-btn"  value="3" onclick="appendToDisplay('2')">
                         2
                     </button>
-                    <button class="calc-btn" value="3" onclick="display.value+='3' ">
+                    <button class="calc-btn" value="3" onclick="appendToDisplay('3')">
                         3
                     </button>
-                    <button class="calc-btn" value="+" onclick="display.value+='+' ">
+                    <button class="calc-btn" value="+" onclick="appendToDisplay('+')">
                         &plus;
                     </button>
                 </div>
                 <div class="cal-btn-row">
-                    <button class="calc-btn" value="00" onclick="display.value += '00' ">
+                    <button class="calc-btn" value="00" onclick="appendToDisplay('00') ">
                         00
                     </button>
-                    <button class="calc-btn" value="0" onclick="display.value+= '0'">
+                    <button class="calc-btn" value="0" onclick="appendToDisplay('0')">
                         0
                     </button>
-                    <button class="cal-btn-double" value="=" onclick="display.value = eval(display.value)">
+                    <button class="cal-btn-double" value="=" onclick="calculate()">
                         &equals;
                     </button>
                 </div>
