@@ -150,7 +150,3 @@ label:after {
 label:active:after{
 	width: 35px;
 }
-#darkmode-toggle:checked + label + .calculator {
-	background:#242424;
-    fill: #183D3D;
-}
