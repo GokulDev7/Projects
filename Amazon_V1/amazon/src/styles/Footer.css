@@ -1,0 +1,25 @@
+
+
+.footer_options_col > h3{
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer_options_col > p{
+    font-size: 14px;
+    margin: 5px;
+}
+.footer_options_col > p:hover{
+    text-decoration: underline;
+}
+.footer_bottom{
+    background: #232F3E;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid darkcyan;
+    height: 150px;
+
+}
+.footer_bottom > img{
+    height: 30px;
+    margin-top: 50px;
+}

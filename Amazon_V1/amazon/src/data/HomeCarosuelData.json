@@ -1,0 +1,31 @@
+{
+    "images":[
+        {
+            "src":"https://m.media-amazon.com/images/I/51DWgNo1fdL._SX3000_.jpg",
+            "alt":"Image 1"
+        },
+        {
+            "src":"https://images-eu.ssl-images-amazon.com/images/G/31/img24/AmazonPay/Travel/PC_Hero_BAU/IF_PC_Hero_3000x1200._CB583399235_.jpg",
+            "alt":"Image 2"
+        },
+        {
+            "src":"https://images-eu.ssl-images-amazon.com/images/G/31/prime/ACQ/Hero_3000x12001._CB592142345_.jpg",
+            "alt":"Image 3"
+        },
+        {
+            "src":"https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/D103625178_DesktopTallHero_3000x1200._CB574597993_.jpg",
+            "alt":"Image 4"
+        },
+        {
+            "src":"https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/CEPC_soundbars_speakers/FEB_2024/Premium_Tallhero_3000x1200._CB580982750_.jpg",
+            "alt":"Image 5"
+        },
+        {
+            "src":"https://images-eu.ssl-images-amazon.com/images/G/31/img23/Beauty/GW/Jan/unrecatf/citi/Makeup-PCcv._CB584595621_.jpg",
+            "alt":"Image 6"
+        }
+       
+
+    ]
+ 
+}
