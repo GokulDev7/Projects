@@ -16,11 +16,7 @@ function Login() {
         e.preventDefault();
         signInWithEmailAndPassword(auth,email,password).then((auth) => {navigate('/')}).catch(error => alert(error.message))
     }
-    // const register = e => {
-    //     e.preventDefault();
-    //     createUserWithEmailAndPassword(auth,email,password).then((auth) => {navigate('/')}).catch(error => alert(error.message))
 
-    // }
     return (
         <div className="login">
             <Link to='/'>
