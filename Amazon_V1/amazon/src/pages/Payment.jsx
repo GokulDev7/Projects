@@ -28,7 +28,7 @@ function Payment() {
                 setClientSecret(response.data.clientSecret);
             } catch (error) {
                 console.error('Error fetching client secret:', error);
-                // Handle the error, you might want to set an error state or log it accordingly
+              
             }
         };
         getClientSecret();
@@ -36,7 +36,7 @@ function Payment() {
     console.log("Secret is ", clientSecret)
 
     const handleSubmit = async (event) => {
-        // do all the fancy stripe stuff...
+       
         event.preventDefault();
         setProcessing(true);
 
@@ -48,7 +48,7 @@ function Payment() {
                 },
             },
         }).then( async ({ paymentIntent }) => {
-            // paymentIntent = payment confirmation
+          
             const userDocRef = doc(db, 'users', user?.uid);
             const ordersCollectionRef = collection(userDocRef, 'orders');
             const orderDocRef = doc(ordersCollectionRef, paymentIntent.id);
