@@ -94,7 +94,7 @@ function Payment() {
                     <div className="flex gap-x-5 border-b-[1px] border-b-gray-300">
                         <h2 className='font-semibold text-xl ml-5 mt-3'> Delivery Address</h2>
                         <p className="ml-[60px] text-base mb-5 mt-3">{'Guest'} <br />
-                            Gokulam <br />
+                            User Address <br />
                             India  </p>
                     </div>
                     <div>
