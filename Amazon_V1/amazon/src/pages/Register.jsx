@@ -18,23 +18,23 @@ function Register() {
     const validateForm = () => {
         const newErrors = {};
 
-        // Validate Name
+      
         if (!formData.name.trim()) {
             newErrors.name = 'Name is required';
         }
 
-        // Validate Email
+       
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!formData.email.trim() || !emailRegex.test(formData.email.trim())) {
             newErrors.email = 'Valid email is required';
         }
 
-        // Validate Password
+     
         if (formData.password.length < 6) {
             newErrors.password = 'Password must be at least 6 characters';
         }
 
-        // Validate Confirm Password
+  
         if (formData.password !== formData.confirmPassword) {
             newErrors.confirmPassword = 'Passwords do not match';
         }
@@ -73,7 +73,7 @@ function Register() {
             [name]: value,
         });
 
-        // Clear the corresponding error when the user starts typing again
+  
         setErrors({
             ...errors,
             [name]: undefined,
@@ -92,7 +92,7 @@ function Register() {
                     <h6>Your Name</h6>
                     <input
                         type="text"
-                        name="name" // Add the 'name' attribute
+                        name="name" 
                         value={formData.name}
                         onChange={handleChange}
                     />
@@ -100,7 +100,7 @@ function Register() {
                     <h6>Email</h6>
                     <input
                         type="email"
-                        name="email" // Add the 'name' attribute
+                        name="email" 
                         value={formData.email}
                         onChange={handleChange}
                     />
@@ -108,7 +108,7 @@ function Register() {
                     <h6>Password</h6>
                     <input
                         type="password"
-                        name="password" // Add the 'name' attribute
+                        name="password"
                         placeholder='At least 6 characters'
                         value={formData.password}
                         onChange={handleChange}
@@ -117,7 +117,7 @@ function Register() {
                     <h6>Re-enter Password</h6>
                     <input
                         type="password"
-                        name="confirmPassword" // Add the 'name' attribute
+                        name="confirmPassword" 
                         value={formData.confirmPassword}
                         onChange={handleChange}
                     />
